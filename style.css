@@ -27,3 +27,56 @@ main p {
   font-family: "Roboto", sans-serif;
   margin-top: 0;
 }
+
+.group {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 100px 20px;
+}
+
+.brown-background {
+  background-color: #775f47;
+  margin-left: 0;
+  padding: 10px 20px;
+}
+
+@media all and (max-width: 800px) {
+  .brown-background {
+    width: 400px;
+  }
+}
+
+@media all and (min-width: 800px) {
+  img {
+    width: 100%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+
+  .item {
+    flex: 1;
+    margin-right: 10px;
+  }
+
+  .item-double {
+    flex: 2;
+  }
+
+  .end-of-row {
+    margin-right: 0;
+  }
+
+  .bottom-of-page {
+    margin-bottom: 0;
+  }
+
+  .brown-background {
+    margin-right: 0;
+  }
+
+  #bottom-of-page img {
+    height: 100%;
+  }
+}
